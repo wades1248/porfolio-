@@ -3,6 +3,7 @@
 	margin: 0px;
 	box-sizing: border-box;
 	}
+	
 header{
 	height: auto;
 	display: block;
@@ -11,17 +12,16 @@ header{
 	
 }
 
-
-.bio{
-padding-top: 200px;
-}
 section{
-display: block;}
+	display: block;
+	}
+	
 nav{
 	background-color: black;
 	color: white;
 	width: 100%;
 	}
+	
 .hero{
 display: flex;
 justify-content: space-between;
@@ -48,7 +48,9 @@ nav li{
 	margin-right: 15px;
 	}
 .bio{
-	height: 700px}
+	height: 700px;
+	padding-top: 200px;
+	}
 .projects, footer{
 	height: 500px;
 	}
