@@ -1,0 +1,38 @@
+*{
+	font-family: 'Overpass', sans-serif;
+	margin: 0px;
+	box-sizing: border-box;
+	}
+section{
+	height: 200px;
+	}
+header{
+	display: block;
+	width: 100%;
+	background-color: grey;
+	}
+.hero{
+display: flex;
+justif-content: space-between;
+align-items: center;
+	}
+.hero h1{
+	font-size: 30px;
+	}
+.hero h2{
+	font-size: 20px;
+	margin-left:auto;
+	margin-right: 20px;
+	}
+	
+nav ul{
+	display: flex;
+	justify-content: flex-end;
+	}
+nav li{
+	margin-right: 15px;
+	}
+.projects{
+	background-color: grey;}
+	
+	
