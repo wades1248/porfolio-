@@ -3,25 +3,40 @@
 	margin: 0px;
 	box-sizing: border-box;
 	}
-section{
-	height: 200px;
-	}
 header{
+	height: auto;
 	display: block;
 	width: 100%;
-	background-color: grey;
+	position: fixed;
+	
+}
+
+
+.bio{
+padding-top: 200px;
+}
+section{
+display: block;}
+nav{
+	background-color: black;
+	color: white;
+	width: 100%;
 	}
 .hero{
 display: flex;
-justif-content: space-between;
+justify-content: space-between;
 align-items: center;
+height: 180px;
+	background-color: green;
+	width: 100%
 	}
 .hero h1{
 	font-size: 30px;
+	display: block;
 	}
 .hero h2{
 	font-size: 20px;
-	margin-left:auto;
+	display: block;
 	margin-right: 20px;
 	}
 	
@@ -32,7 +47,13 @@ nav ul{
 nav li{
 	margin-right: 15px;
 	}
+.bio{
+	height: 700px}
+.projects, footer{
+	height: 500px;
+	}
 .projects{
 	background-color: grey;}
+
 	
 	
