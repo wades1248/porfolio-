@@ -3,6 +3,9 @@
 	margin: 0px;
 	box-sizing: border-box;
 }
+.fixed{
+-webkit-backface-visibility: hidden;
+}
 
 main{
 	background-color: rgb(247, 234, 217);
@@ -154,6 +157,9 @@ footer{
 	}
 	nav a:hover{
 	color:rgb(255, 50, 49);
+	}
+	footer{
+	padding-bottom:20%;
 	}
 }
  
