@@ -4,8 +4,8 @@
 	box-sizing: border-box;
 }
 
-.fixed{
--webkit-backface-visibility: hidden;
+/*.fixed{
+-webkit-backface-visibility: hidden;*/
 }
 
 main{
