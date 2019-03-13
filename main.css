@@ -76,7 +76,7 @@ nav{
 	justify-content: flex-end;
 	align-items: center;
 	position: fixed;
-	bottom: 0px;
+	bottom: 0;
 }
 nav ul{
 	display: block;
