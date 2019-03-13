@@ -4,8 +4,8 @@
 	box-sizing: border-box;
 }
 
-/*.fixed{
--webkit-backface-visibility: hidden;*/
+.fixed{
+-webkit-backface-visibility: hidden;
 }
 
 main{
@@ -128,8 +128,8 @@ nav li{
 .toggle span:nth-child(3){
 	transform-origin: left;
 	}
-.toggle.active span{
-	background-color:rgb(255, 50, 49);
+/*.toggle.active span{
+	background-color:rgb(255, 50, 49);*/
 	}
 .toggle.active span:nth-child(1){
 	transform: rotate(45deg);
