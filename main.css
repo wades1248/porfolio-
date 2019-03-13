@@ -77,13 +77,20 @@ margin-bottom:15px;
 nav{
 	height: 10%;
 	width: 100%;
-	background-color:rgba(135,201,195);
+	background-color:rgb(135,201,195);
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	position: fixed;
 	bottom: 0;
 }
+/*.iOSfix{
+	position: relative;
+	display: block;
+	width:100%;
+	height:auto;
+	background-color: rgb(135,201,195);
+	}*/
 nav ul{
 	display: block;
 	position: fixed;
