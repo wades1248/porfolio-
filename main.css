@@ -3,6 +3,7 @@
 	margin: 0px;
 	box-sizing: border-box;
 }
+
 .fixed{
 -webkit-backface-visibility: hidden;
 }
@@ -75,6 +76,7 @@ nav{
 	justify-content: flex-end;
 	align-items: center;
 	position: fixed;
+	bottom: 0px;
 }
 nav ul{
 	display: block;
