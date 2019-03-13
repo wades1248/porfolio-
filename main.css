@@ -129,8 +129,8 @@ nav li{
 	transform-origin: left;
 	}
 /*.toggle.active span{
-	background-color:rgb(255, 50, 49);*/
-	}
+	background-color:rgb(255, 50, 49);
+	}*/
 .toggle.active span:nth-child(1){
 	transform: rotate(45deg);
 	left: 2px;
