@@ -13,6 +13,7 @@ header{
 	display: block;
 	height: 100%;
 	width: 100%;
+	background-color: rgb(255, 50, 49);
 }
 
 
@@ -20,9 +21,12 @@ section{
 	display: block;
 }
 
-a{
+header a{
 	text-decoration: none;
-	color:azure;
+	color: white;
+}
+header a:hover{
+ color: rgb(23,31,104);
 }
 
 .hero{
@@ -30,11 +34,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 height: 90%;
-background-color: rgb(255, 50, 49);
+
 width: 100%
 }
-
-
 
 .hero h1{
 	font-size: 32px;
@@ -46,6 +48,7 @@ width: 100%
 .hero h2{
 	display: block;
 	margin-right: 15%;
+	font-size: 32px;
 	text-align: right;
 	margin-bottom:0px;
 	color:rgb(163, 248, 241);
@@ -58,15 +61,28 @@ h2{
 }
 h3{
 font-size: 20px;
+margin-bottom:15px;
 }
 
 nav{
 	height: 10%;
 	width: 100%;
 	background-color:rgba(135,201,195);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: fixed;
 }
-
-nav ul{	
+nav ul{
+	display: block;
+	position: fixed;
+	bottom: 10%;
+	right:20px;
+	font-size: 50px;
+	padding: 4px;
+	border: 4px solid azure;
+	}
+/*nav ul{	
 	display: flex;	
 	height: 100%;
 	justify-content: flex-end;
@@ -74,12 +90,118 @@ nav ul{
 }
 nav li{	
 	margin-right: 15px;	
+}*/
+.hidden{
+	display: none;
+	}
+.burger{
+	margin-right:20px;
+	}
+.toggle span{
+	box-sizing:none;
+	position:relative;
+	width: 36px;
+	height: 4px;
+	display: block;
+	margin-top:8px;
+	margin-bottom:8px;
+	transition: .5s;
+	background-color: azure;
 }
-
+.toggle span:nth-child(1){
+	transform-origin: left;
+}
+.toggle span:nth-child(2){
+	transform-origin: center;
+}
+.toggle span:nth-child(3){
+	transform-origin: left;
+	}
+.toggle.active span{
+	background-color:rgb(255, 50, 49);
+	}
+.toggle.active span:nth-child(1){
+	transform: rotate(45deg);
+	left: 2px;
+}
+.toggle.active span:nth-child(2){
+	transform: rotate(315deg);
+	right: 2px;
+	}
+.toggle.active span:nth-child(3){
+	transform: scaleX(0);
+	}
+	
 .bio, .projects, footer{
 	padding-top: 20px;
 }
 .bio p{
 display: block;
-width: 600px;
+width: 80%;
+}
+
+a{
+	color: rgb(23,31,154);
+	text-decoration:none;
+	}
+footer{
+	padding-bottom: 10%;
+	}
+
+@media screen and (max-width: 719px){
+	nav ul{
+	background-color: rgb(23,31,154);
+	}
+	nav a:hover{
+	color:rgb(255, 50, 49);
+	}
+}
+ 
+@media screen and (min-width: 720px){
+	
+	.hidden{	
+	position: relative;
+	display: flex;	
+	height: 100%;
+	justify-content: flex-end;
+	align-items: center;	
+	border: none;
+	font-size: 25px;
+	}
+	
+	nav li{	
+	margin-right: 15px;	
+		}
+	.burger{
+	display:none;
+	}
+	.hero h1, .hero h2{
+	font-size: 50px;
+	}
+	h2{
+	font-size: 30px;
+	}
+	h3{
+	font-size:25px;
+	}
+	*{
+	font-size: 20px;
+	}
+}
+@media screen and (min-width: 1200px){
+
+	.hero h1, .hero h2{ 
+	font-size: 100px;
+	}
+	h2{
+	font-size: 50px;}
+	h3{
+	font-size:40px;
+	}
+	*{
+	font-size: 30px;
+	}
+	nav a{
+	font-size: 40px;
+	}
 }
